@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Events List</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-12">
+      <a routerLink="/get-sport-by-name/{{s.sportsId}}" *ngFor="let s of sports" href="#" class="list-group-item">
+        <div>
+          <h4 class="d-inline list-group-item-heading">Sports Id: {{s.sportsId}}</h4><br />
+          <h4 class="list-group-item-heading">Number of players: {{s.noOfPlayers}}</h4>
+          <p class="list-group-item-text">Sports Name: {{s.sportsName}}</p>
+          <p class="list-group-item-text">Sports Type: {{s.sportsType}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

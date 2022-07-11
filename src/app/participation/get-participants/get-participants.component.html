@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Participations</title>
+</head>
+<br />
+<body>
+  <div class="row">
+    <div class="col-12">
+      <a *ngFor ="let p of participations" href="#" class="list-group-item">
+        <div>
+          <h4 class="d-inline list-group-item-heading">Participation ID: {{p.participationId}} </h4>
+          <h4 class="list-group-item-heading">Player Id: {{p.playerId}}</h4><br />
+          <p class="list-group-item-text">Player Name: {{p.playerName}}</p>
+          <p class="list-group-item-text">Event Id: {{p.eventId}}</p>
+          <p class="list-group-item-text">Event Name: {{p.eventName}}</p>
+          <p class="list-group-item-text">Sports Id: {{p.sportsId}}</p>
+          <p class="list-group-item-text">Sports Name: {{p.sportsName}}</p>
+          <p *ngIf="p.status == 1" class="list-group-item-text">Status: Pending</p>
+          <p *ngIf="p.status == 2" class="list-group-item-text">Status: Accepted</p>
+          <p *ngIf="p.status == 3" class="list-group-item-text">Status: Declined</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      <h3 class="col-10">If you want to add new participant, Click here -> <a routerLink="/add-participation"><i class="fas fa-edit"></i></a></h3>
+    </div>
+  </div>
+  <br />
+</body>
+</html>

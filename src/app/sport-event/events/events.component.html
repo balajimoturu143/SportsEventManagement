@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Events List</title>
+</head>
+<body>
+  <div class="row">
+    <div class="col-12">
+      <a routerLink="/get-event-by-name/{{e.eventId}}" *ngFor="let e of events" href="#" class="list-group-item">
+        <div>
+          <h4 class="d-inline list-group-item-heading">Event Id: {{e.eventId}}</h4><br />
+          <h4 class="list-group-item-heading">Event Date: {{e.eventDate}}</h4>
+          <p class="list-group-item-text">Event Name: {{e.eventName}}</p>
+          <p class="list-group-item-text">No Of Slots: {{e.noOfSlots}}</p>
+          <p class="list-group-item-text">Sports Name: {{e.sportsName}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      <h4 class="col-11">If you want to add new event, Click here -> <a routerLink="/add-event"><i class="fas fa-edit"></i></a></h4>
+    </div>
+  </div>
+  <br />
+</body>
+</html>

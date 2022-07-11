@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Sports Event Management</title>
+</head>
+
+<body style="background-image: url('assets/images/sportsBG.jpg');">
+<!--<body>-->
+  <h1 class="text-center" style="color: white;font-family: 'Verdana, Geneva, Tahoma, sans-serif'; background-color: 'black';">SPORTS EVENT MANAGEMENT SYSTEM</h1>
+  <div class="container">
+    <div class="row justify-content-between">
+      <div routerLink="/players" class="btn btn-success col-3 pull-left">Player</div>
+      <div routerLink="/sport-event" class="btn btn-secondary col-3 ">Sport Event</div>
+      <div routerLink="/get-participants" class="btn btn-primary col-3 pull-right">Participation</div>
+
+      <router-outlet></router-outlet>
+      <!--<app-participation></app-participation>-->
+      <!--<app-player></app-player>-->
+      <!--<app-sport-event></app-sport-event>-->
+    </div>
+  </div>
+</body>
+</html>
